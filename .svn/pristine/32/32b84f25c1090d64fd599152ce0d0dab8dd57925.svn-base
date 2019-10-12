@@ -1,0 +1,10 @@
+#driver=com.mysql.cj.jdbc.Driver
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://127.0.0.1:3306/c2c?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true
+user=root
+password=123456
+initiaSize=0
+maxActive=20
+maxIdle=20
+minIdle=1
+maxWait=60000

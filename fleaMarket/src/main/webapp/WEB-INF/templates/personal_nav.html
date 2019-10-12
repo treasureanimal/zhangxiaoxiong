@@ -1,0 +1,22 @@
+<div class="personal_nav" th:fragment="personal_nav">
+	<span th:if="${userInformation.role} == 0">
+    <ul>
+        <li><a href="personal_info.do">个人信息</a></li>
+        <li><a href="/publish_product.do">发布商品</a></li>
+        <li><a href="/require_product.do">发布求购信息</a></li>
+        <li><a href="/shopping_cart.do">我的购物车</a></li>
+        <li><a href="/my_publish_product_page.do">我发布的商品</a></li>
+        <li><a href="/my_require_product_page.do">我收藏的商品</a></li>
+        <li><a href="/orderForm.do">我的订单</a></li>
+        <li><a class="login_out" href="/logout.do">退出</a></li>
+    </ul>
+    </span>
+    <span th:if="${userInformation.role} == 1">
+   <ul>
+        <li><a href="personal_info.do">个人信息</a></li>
+        <li><a href="/user_manager.do">用户管理</a></li>
+        <li><a href="/product_examine.do">商品审核</a></li>
+        <li><a class="login_out" href="/logout.do">退出</a></li>
+    </ul>
+    </span>
+</div>
